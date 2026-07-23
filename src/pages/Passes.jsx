@@ -8,7 +8,7 @@ import p_image from "../assets/logo/passimage.png";
 function Passes() {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-200">
-      <div className="relative w-[360px] h-[740px] border-2 border-blue-500 bg-black  overflow-hidden ">
+      <div className="relative w-[360px] h-[740px] border-none border-blue-500 bg-black  overflow-hidden ">
 
         <div className="w-full h-17  flex flex-row pt-4">
           <h2 className="font-bold px-5">Passes</h2>
@@ -56,7 +56,7 @@ function Passes() {
 
 
         {/* bottom nav */}   
-        <div className=" absolute bottom-0 w-full h-20  border-none border-black">
+        <div className=" absolute bottom-0 w-full h-20  border-2 border-green-500">
             <div className="w-80 h-20 pt-1.5 px-4 border-none border-black  flex flex-row gap-7">
 
                 <button
