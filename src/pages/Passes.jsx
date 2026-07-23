@@ -56,7 +56,7 @@ function Passes() {
 
 
         {/* bottom nav */}   
-        <div className=" absolute bottom-0 w-full h-20  border-2 border-green-500">
+        <div className=" absolute bottom-0 w-full h-20  border-none border-green-500">
             <div className="w-80 h-20 pt-1.5 px-4 border-none border-black  flex flex-row gap-7">
 
                 <button
