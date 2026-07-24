@@ -26,13 +26,13 @@ function Bottomhalf(){
 
 
 
-            <div className="absolute left-0 flex flex-col gap-4 pt-7 px-5">
+            <div className="absolute w-full flex flex-col gap-4 pt-7 px-5">
                 {/* search bar */}
-                <div className=" w-80 h-15  rounded-xl bg-red-500 flex shadow-xl/20 ">
+                <div className=" w-[100%] h-15  rounded-xl bg-red-500 flex shadow-xl/20 ">
                     <input type="text" placeholder="       Search 'Bus Stop'" className="w-full rounded-xl text-white" />
                 </div>
                 {/* transport icons */}
-                <div className="w-80 h-20 pt-2.5 px-6 border-none border-black  flex flex-row gap-7">
+                <div className="w-full h-20 pt-2.5 px-6 border-none border-black  flex flex-row  justify-between  ">
 
                     <div className="flex flex-col gap-2 justify-center items-center ">
                         <div className="w-11 h-11 bg-[#ffde7a] border-none border-black rounded-4xl flex items-center justify-center">
@@ -84,7 +84,7 @@ function Bottomhalf(){
             </div>
 
             {/* box */}
-            <div className="absolute w-75 h-35 bg-[#f3bc61] top-55 border-none border-black rounded-2xl shadow-xl/20"></div>
+            <div className="absolute w-[95%] h-35 bg-[#f3bc61] top-55 border-none border-black rounded-2xl shadow-xl/20"></div>
 
 
 
@@ -93,8 +93,8 @@ function Bottomhalf(){
                
 
             {/* bottom nav */}   
-            <div className=" absolute bottom-0 w-full h-20  border-none border-green-500">
-                <div className="w-80 h-20 pt-1.5 px-4 border-none border-black  flex flex-row gap-7">
+            <div className=" absolute bottom-0 w-full h-20  border-2 border-green-500">
+                <div className="w-full h-20 pt-1.5 px-4 border-2 border-black  flex flex-row  justify-between">
     
                     <button
                     onClick={() => navigate("/")}

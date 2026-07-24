@@ -3,11 +3,11 @@ import Bottomhalf from "../components/Bottomhalf";
 
 function Home() {
   return (
-    <div className="min-w-[360px] min-h-[740px] flex justify-center items-center bg-gray-200">
-      <div className="relative w-[360px] h-[740px] border-none border-blue-500 bg-black  overflow-hidden">
+    <div className="w-full h-full flex justify-center items-center bg-gray-200">
+      
         <Firsthalf />
         <Bottomhalf />
-      </div>
+      
     </div>
   );
 }

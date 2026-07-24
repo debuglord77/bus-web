@@ -7,7 +7,7 @@ import p_image from "../assets/logo/passimage.png";
 
 function Passes() {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-black">
+    <div className="w-full min-h-screen flex justify-center items-center bg-black">
       <div className="relative w-[360px] h-[740px] border-none border-blue-500 bg-black  overflow-hidden ">
 
         <div className="w-full h-17  flex flex-row pt-4">
