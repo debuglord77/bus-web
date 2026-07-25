@@ -18,7 +18,7 @@ function Bottomhalf(){
     const navigate = useNavigate();
     
     return(
-        <div className="bg-white absolute top-[85%] left-0 w-full h-full rounded-t-[36px] flex justify-center pt-3 shadow-xl/20">
+        <div className="bg-white absolute top-[85%] left-0 w-full h-min-screen rounded-t-[36px] flex justify-center pt-3 shadow-xl/20">
             
             <div className="w-20 h-1 border border-none rounded-xl bg-[#dfdedf] "></div>
 
@@ -93,7 +93,7 @@ function Bottomhalf(){
                
 
             {/* bottom nav */}   
-            <div className=" absolute w-full h-20  border-2 border-green-500">
+            <div className=" absolute top-[100%] w-full h-20  border-2 border-green-500">
                 <div className="w-full h-20 pt-1.5 px-4 border-2 border-black  flex flex-row  justify-between">
     
                     <button
