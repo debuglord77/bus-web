@@ -1,6 +1,6 @@
 function Firsthalf(){
     return (
-        <><div className="relative w-full h-90 bg-blue-300  ">
+        <><div className="relative w-full h-full bg-blue-300  ">
             
         
         
