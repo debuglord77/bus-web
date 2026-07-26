@@ -31,7 +31,7 @@ const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
 const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
 const seconds = String(timeLeft % 60).padStart(2, "0");
   return (
-    <div className=" relative w-full  border-green-500 h-screen bg-black overflow-hidden flex flex-col gap-4">
+    <div className=" relative w-full  border-green-500 h-180 bg-black overflow-hidden flex flex-col gap-4">
       
 
         <div className="w-full h-17 border-2 flex flex-row pt-4">
