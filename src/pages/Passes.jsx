@@ -45,10 +45,10 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
             <button className="absolute left-4 w-20 h-8 font-bold text-[10px] bg-[#d6d5e3] rounded-4xl">Bus(1/1)</button>
         </div>
 
-        <div className="flex-1 flex justify-center border-2  items-center px-4 p-5 ">
+        <div className=" flex justify-center border-2  items-center px-4 pt-1 ">
 
 
-            <div className=" relative w-80 h-120  border-blue-500  rounded-4xl flex justify-center items-center  pb-20 ">
+            <div className=" relative w-90 h-100  border-2 border-blue-500  rounded-4xl flex justify-center items-center  pb-20 ">
                 {/* Background image inside the frame */}
                 <img
                     src={p_image}
