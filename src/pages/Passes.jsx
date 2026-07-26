@@ -48,12 +48,12 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
         <div className="flex-1 flex justify-center border-2  items-center px-4 p-5 ">
 
 
-            <div className="w-80 h-120  border-blue-500  rounded-4xl flex justify-center items-center  pb-20 ">
+            <div className=" relative w-80 h-120  border-blue-500  rounded-4xl flex justify-center items-center  pb-20 ">
                 {/* Background image inside the frame */}
                 <img
                     src={p_image}
                     alt=""
-                    className="absolute fixed-center w-89 h-125 object-cover"
+                    className="absolute fixed-center w-89 h-110 object-cover"
                 />
 
 
