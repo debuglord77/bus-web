@@ -48,22 +48,22 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
         <div className="flex-1 flex justify-center border-2  items-center px-4 p-5 ">
 
 
-            <div className="w-80 h-120 border-2 border-blue-500 bg-green-500 rounded-4xl flex justify-center items-center   ">
+            <div className="w-80 h-120  border-blue-500  rounded-4xl flex justify-center items-center   ">
                 {/* Background image inside the frame */}
                 <img
                     src={p_image}
                     alt=""
-                    className="absolute fixed-center w-90 h-130 object-cover"
+                    className="absolute fixed-center w-89 h-125 object-cover"
                 />
 
 
-                <div className="absolute  left-1/2 -translate-x-1/2 w-[80%] h-25  bottom-[18%]   border-green-500 flex flex-row justify-around items-center">
-                    <div className="w-[27%] h-[54%]  bg-white rounded-xl flex flex-col justify-center items-center px-3">
+                <div className="absolute  left-1/2 -translate-x-1/2 w-[85%] h-25  bottom-[18%]   border-green-500 flex flex-row justify-around items-center">
+                    <div className="w-22 h-14  bg-white  rounded-xl flex flex-col justify-center items-center px-3 translate-x-3">
                         <h3 className="text-[10px] px-2 font-mono ">Jun 29</h3>
                         <h3 className="text-[15px] font-mono ">{hours}:{minutes}:{seconds}</h3>
                     </div>
                     <div className="w-30 h-20 border-none border-2"></div>
-                    <div className="w-[18%] h-[60%]  border-none bg-white rounded-xl -translate-x-4"></div>
+                    <div className="w-14 h-14  border-none bg-white rounded-xl -translate-x-6 -translate-y-1"></div>
                 </div>
 
                 
