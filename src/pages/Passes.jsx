@@ -53,7 +53,7 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
                 <img
                     src={p_image}
                     alt=""
-                    className=" w-full h-full object-cover rounded-4xl"
+                    className=" w-[100%] h-[100%] object-cover rounded-4xl"
                 />
 
 
