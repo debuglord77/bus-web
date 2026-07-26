@@ -80,7 +80,7 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
 
 
         {/* bottom nav */}   
-        <div className=" absolute bottom-0 w-full h-20  border-none border-green-500">
+        <div className=" fixed bottom-0 left-0 w-full h-20 bg-black z-50">
             <div className="w-full h-20 pt-1.5 px-4 border-none border-black  flex flex-row  justify-between">
 
                 <button
