@@ -31,7 +31,7 @@ const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
 const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
 const seconds = String(timeLeft % 60).padStart(2, "0");
   return (
-    <div className="relative w-full min-h-screen bg-black overflow-hidden">
+    <div className="relative w-full h-screen bg-black overflow-hidden">
       
 
         <div className="w-full h-17 border-2 flex flex-row pt-4">
@@ -45,10 +45,10 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
             <button className="absolute left-4 w-20 h-8 font-bold text-[10px] bg-[#d6d5e3] rounded-4xl">Bus(1/1)</button>
         </div>
 
-        <div className="w-full h-130  flex justify-center items-center  ">
+        <div className="flex-1 flex justify-center border-2  items-center px-4 p-5 ">
 
 
-            <div className="w-80 h-120 border-2 border-blue-500 bg-green-500 rounded-4xl flex justify-center items-center  ">
+            <div className="w-80 h-120 border-2 border-blue-500 bg-green-500 rounded-4xl flex justify-center items-center   ">
                 {/* Background image inside the frame */}
                 <img
                     src={p_image}
@@ -57,7 +57,7 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
                 />
 
 
-                <div className="fixed w-85 h-25 absolute  bottom-[18%]   border-green-500 flex flex-row justify-around items-center">
+                <div className="absolute  left-1/2 -translate-x-1/2 w-[80%] h-25  bottom-[18%]   border-green-500 flex flex-row justify-around items-center">
                     <div className="w-[27%] h-[54%]  bg-white rounded-xl flex flex-col justify-center items-center px-3">
                         <h3 className="text-[10px] px-2 font-mono ">Jun 29</h3>
                         <h3 className="text-[15px] font-mono ">{hours}:{minutes}:{seconds}</h3>
