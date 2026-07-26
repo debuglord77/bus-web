@@ -5,19 +5,43 @@ import home from "../assets/logo/home.png";
 import profile from "../assets/logo/profile.png";
 import p_image from "../assets/logo/passimage.png";
 
-function Passes() {
-  return (
-    <div className="w-full min-h-screen flex justify-center items-center bg-black">
-      <div className="relative w-[360px] h-[740px] border-none border-blue-500 bg-black  overflow-hidden ">
+import { useState, useEffect } from "react";
 
-        <div className="w-full h-17  flex flex-row pt-4">
-          <h2 className="font-bold px-5">Passes</h2>
+function Passes() {
+
+
+// Countdown timer (30 hours)
+const [timeLeft, setTimeLeft] = useState(30 * 60 * 60);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setTimeLeft((prev) => {
+      if (prev <= 1) {
+        clearInterval(interval);
+        return 0;
+      }
+      return prev - 1;
+    });
+  }, 1000);
+
+  return () => clearInterval(interval);
+}, []);
+
+const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+const seconds = String(timeLeft % 60).padStart(2, "0");
+  return (
+    <div className="relative w-full min-h-screen bg-black overflow-hidden">
+      
+
+        <div className="w-full h-17 border-2 flex flex-row pt-4">
+          <h2 className="font-bold text-white px-5 translate-x-4">Passes</h2>
           <button className="absolute right-27 w-20 h-7 font-bold text-[10px] text-white bg-[#2d2a31] rounded-4xl">Help</button>
           <button className="absolute right-5 w-20 h-7 font-bold text-[10px]  text-white bg-[#2d2a31] rounded-4xl">History</button>
 
         </div>
 
-        <div className="w-full h-10 ">
+        <div className="w-full h-10 translate-x-4 ">
             <button className="absolute left-4 w-20 h-8 font-bold text-[10px] bg-[#d6d5e3] rounded-4xl">Bus(1/1)</button>
         </div>
 
@@ -29,26 +53,26 @@ function Passes() {
                 <img
                     src={p_image}
                     alt=""
-                    className="absolute left-1 w-90 h-130 object-cover"
+                    className="absolute fixed-center w-90 h-130 object-cover"
                 />
 
-                <div className=" w-43 h-70 border-2 border-red-500 bg-white rounded-[4vw] flex justify-center items-center flex-col ">
-                    <div className="w-30 h-30 border-2 border-blue-500 rounded-[3.5vw] "></div>
-                    <h1 className="text-[30px] font-semibold">1000</h1>
-                    <p className="text-[12px] pt-2">VALID TILL</p>
-                    <h2 className="text-[20px] font-semibold">16/07/2026</h2>
+
+                <div className="fixed w-85 h-25 absolute  bottom-[18%]   border-green-500 flex flex-row justify-around items-center">
+                    <div className="w-[27%] h-[54%]  bg-white rounded-xl flex flex-col justify-center items-center px-3">
+                        <h3 className="text-[10px] px-2 font-mono ">Jun 29</h3>
+                        <h3 className="text-[15px] font-mono ">{hours}:{minutes}:{seconds}</h3>
+                    </div>
+                    <div className="w-30 h-20 border-none border-2"></div>
+                    <div className="w-[18%] h-[60%]  border-none bg-white rounded-xl -translate-x-4"></div>
                 </div>
+
+                
+
+                
 
             </div>
 
-            <div className="w-80 h-25 absolute bottom-31  border-none border-2 flex flex-row justify-around pt-2 ">
-                <div className="w-23 h-13 border-none border-2 bg-white rounded-[1.2vw] flex flex-col justify-center items-center px-3">
-                    <h3 className="text-[10px] px-2 font-mono ">Jun 29</h3>
-                    <h3 className="text-[15px] font-mono ">29:23:23</h3>
-                </div>
-                <div className="w-30 h-20 border-none border-2"></div>
-                <div className="w-16 h-16 border-none border-2 bg-white rounded-[1.2vw] -translate-y-[2px]"></div>
-            </div>
+            
 
 
         </div>
@@ -57,7 +81,7 @@ function Passes() {
 
         {/* bottom nav */}   
         <div className=" absolute bottom-0 w-full h-20  border-none border-green-500">
-            <div className="w-80 h-20 pt-1.5 px-4 border-none border-black  flex flex-row gap-7">
+            <div className="w-full h-20 pt-1.5 px-4 border-none border-black  flex flex-row  justify-between">
 
                 <button
                 onClick={() => navigate("/")}
@@ -137,7 +161,7 @@ function Passes() {
 
             </div>
         </div>    
-      </div>
+      
     </div>
   );
 }
