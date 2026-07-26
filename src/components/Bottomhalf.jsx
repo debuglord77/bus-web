@@ -32,14 +32,14 @@ function Bottomhalf(){
                     <input type="text" placeholder="       Search 'Bus Stop'" className="w-full rounded-xl text-white" />
                 </div>
                 {/* transport icons */}
-                <div className="w-full h-20 pt-2.5 px-6 border-none border-black  flex flex-row  justify-between  ">
+                <div className="w-full h-25 pt-2.5 px-6 border-none border-black  flex flex-row  justify-between  ">
 
                     <div className="flex flex-col gap-2 justify-center items-center ">
-                        <div className="w-11 h-11 bg-[#ffde7a] border-none border-black rounded-4xl flex items-center justify-center">
+                        <div className="w-14 h-14 bg-[#ffde7a] border-none border-black rounded-full flex items-center justify-center">
                         <img 
                             src={bus} 
                             alt="Bus" 
-                            className="w-10 h-10 pt-1 object-cover " />
+                            className="w-14 h-14 pt-1 object-cover " />
                         </div>
                         <h3 className=" text-xs text-grey-500">Bus</h3>
 
@@ -47,33 +47,33 @@ function Bottomhalf(){
                     
 
                     <div className="flex flex-col gap-2 justify-center items-center ">
-                        <div className="w-11 h-11 bg-[#c4dcb8] border-none border-black rounded-4xl flex items-center justify-center">
+                        <div className="w-14 h-14 bg-[#c4dcb8] border-none border-black rounded-4xl flex items-center justify-center">
                         <img 
                             src={train} 
                             alt="Train" 
-                            className="w-10 h-10 pt-1 object-cover " />
+                            className="w-14 h-14 pt-1 object-cover " />
                         </div>
                         <h3 className=" text-xs text-grey-500">Train</h3>
 
                     </div>
 
                     <div className="flex flex-col gap-2 justify-center items-center ">
-                        <div className="w-11 h-11 bg-[#a5dbff] border-none border-black rounded-4xl flex items-center justify-center">
+                        <div className="w-14 h-14 bg-[#a5dbff] border-none border-black rounded-4xl flex items-center justify-center">
                         <img 
                             src={metro} 
                             alt="Metro" 
-                            className="w-10 h-10 pt-1 object-cover " />
+                            className="w-14 h-14 pt-1 object-cover " />
                         </div>
                         <h3 className=" text-xs text-grey-500">Metro</h3>
 
                     </div>
 
                     <div className="flex flex-col gap-2 justify-center items-center ">
-                        <div className="w-11 h-11 bg-[#e3d3f8] border-none border-black rounded-4xl flex items-center justify-center">
+                        <div className="w-14 h-14 bg-[#e3d3f8] border-none border-black rounded-4xl flex items-center justify-center">
                         <img 
                             src={auto} 
                             alt="auto" 
-                            className="w-10 h-10  object-cover " />
+                            className="w-14 h-14  object-cover " />
                         </div>
                         <h3 className=" text-xs text-grey-500">Auto/Cab</h3>
 
