@@ -6,8 +6,10 @@ import profile from "../assets/logo/profile.png";
 import p_image from "../assets/logo/passimage.png";
 
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Passes() {
+    const navigate = useNavigate();
 
 
 // Countdown timer (30 hours)
@@ -31,7 +33,7 @@ const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
 const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
 const seconds = String(timeLeft % 60).padStart(2, "0");
   return (
-    <div className=" relative w-full  border-green-500 h-180 bg-black overflow-hidden flex flex-col gap-4">
+    <div className=" relative w-full  border-green-500 h-182 bg-black overflow-hidden flex flex-col gap-4">
       
 
         <div className="w-full h-17 border-2 flex flex-row pt-4">
@@ -48,31 +50,13 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
         <div className=" flex justify-center border-2  items-center px-4 pt-1 ">
 
 
-            <div className=" relative w-[99%] h-110   border-blue-500  rounded-4xl flex justify-center items-center   ">
+            
                 {/* Background image inside the frame */}
                 <img
                     src={p_image}
                     alt=""
-                    className="absolute inset-0 w-full h-full  rounded-4xl"
+                    className="absolute top-30 w-[90%] h-120  rounded-4xl"
                 />
-
-
-                <div className="absolute  left-1/2 -translate-x-1/2 w-[85%] h-25  bottom-[18%]   border-green-500 flex flex-row justify-around items-center">
-                    <div className="w-22 h-14  bg-white  rounded-xl flex flex-col justify-center items-center px-3 translate-x-3">
-                        <h3 className="text-[10px] px-2 font-mono ">Jun 29</h3>
-                        <h3 className="text-[15px] font-mono ">{hours}:{minutes}:{seconds}</h3>
-                    </div>
-                    <div className="w-30 h-20 border-none border-2"></div>
-                    <div className="w-14 h-14  border-none bg-white rounded-xl -translate-x-6 -translate-y-1"></div>
-                </div>
-
-                
-
-                
-
-            </div>
-
-            
 
 
         </div>
