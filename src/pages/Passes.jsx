@@ -33,7 +33,7 @@ const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
 const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
 const seconds = String(timeLeft % 60).padStart(2, "0");
   return (
-    <div className=" relative bottom-0 w-full h-screen border-green-500  bg-black overflow-hidden flex flex-col gap-4">
+    <div className=" relative bottom-0 w-full h-[100px] border-green-500  bg-black overflow-hidden flex flex-col gap-4">
       
 
         <div className="w-full h-17 border-2 flex flex-row pt-4">
@@ -48,10 +48,6 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
         </div>
 
         <div className=" flex justify-center border-2  items-center px-4 pt-1 ">
-
-
-            
-                {/* Background image inside the frame */}
                 <img
                     src={p_image}
                     alt=""
