@@ -37,9 +37,9 @@ const seconds = String(timeLeft % 60).padStart(2, "0");
       
 
         <div className="w-full h-17 border-2 flex flex-row pt-4">
-          <h2 className="font-bold text-white px-5 translate-x-4">Passes</h2>
-          <button className="absolute right-27 w-20 h-7 font-bold text-[10px] text-white bg-[#2d2a31] rounded-4xl">Help</button>
-          <button className="absolute right-5 w-20 h-7 font-bold text-[10px]  text-white bg-[#2d2a31] rounded-4xl">History</button>
+          <h2 className="font-bold text-white px-5 text-lg translate-x-4">Passes</h2>
+          <button className="absolute right-27 w-25 h-10 font-bold text-lg  text-white bg-[#2d2a31] rounded-4xl">Help</button>
+          <button className="absolute right-5 w-25 h-10 font-bold text-lg   text-white bg-[#2d2a31] rounded-4xl">History</button>
 
         </div>
 
